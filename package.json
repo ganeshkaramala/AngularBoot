@@ -1,0 +1,21 @@
+
+{
+  "name": "AngularBoot",
+  "version": "1.0.0",
+  "description": "AngularBoot",
+  "author": "Ganesh Karamala",
+  "contributors": [{
+  "name": "",
+  "email": ""}],
+  "main": "server.js",
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "preferGlobal": true,
+  "private": true,
+  "publishConfig": {
+  "registry": ""
+},
+  "license": "unlicensed"
+}

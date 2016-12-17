@@ -1,0 +1,25 @@
+<nav aria-label="Page navigation pagination-sm">
+  <ul class="pagination">
+    <li ng-class="{disabled: !isPrevExists()}" ng-if="includeFirstLast">
+      <a href="" ng-click="selectFirst()" aria-label="First">First
+      </a>
+    </li>
+    <li ng-class="{disabled: !isPrevExists()}" ng-if="includeNextPrev">
+      <a href="" ng-click="selectPrevious()" aria-label="Previous">
+       <span aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+      </a>
+    </li>
+    <li ng-class="{active: isActive(pageNumber)}" ng-repeat="pageNumber in pageNumbers">
+       <a href="" ng-click="selectPage(pageNumber)">{{pageNumber}}</a>
+    </li>
+    <li ng-class="{disabled: !isNextExists()}" ng-if="includeNextPrev">
+      <a href="" ng-click="selectNext()" aria-label="Next">
+        <span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+      </a>
+    </li>
+    <li ng-class="{disabled: !isNextExists()}" ng-if="includeFirstLast">
+      <a href="" ng-click="selectLast()" aria-label="Last">Last
+      </a>
+    </li>
+  </ul>
+</nav>
